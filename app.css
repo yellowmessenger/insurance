@@ -1,0 +1,419 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+#sideMenuIcon{
+  
+  font-size: 30px;
+  padding-top: 15px;
+ 
+}
+
+.navbar{
+  height: 60px;
+}
+
+#navBarFont{
+  font-size: 15px;
+  font-weight: 700;
+  padding-top: 20px;
+  color: #404040;
+}
+
+#logoSize{
+  height: 40px;
+  padding-left: 40%;
+  margin-top: 5px;
+}
+#menuSize{
+  font-size: 17px;
+  font-weight: 800;
+   padding-top: 5px;
+}
+
+#backMenuIcon{
+  font-size: 20px;
+}
+
+/*Side Menu----------------------------------------------*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*Side menu end here---------------------------------*/
+
+.amberBackground{
+  padding-top: 1px;
+  height: 250px;
+  background-color:darkorange;
+}
+
+/*---------------------*/
+
+#card1{
+  
+  background: url('./images/FWDblog.jpg');
+  background-size:cover;
+  height: 200px;
+  color: white;
+}
+
+#card2{
+  
+  background: url('./images/FWDblog2.jpeg');
+  background-size:cover;
+  height: 200px;
+  color: white;
+}
+
+#viewMore{
+  float: right;
+  padding-right: 20px;
+  padding-top: 10px;
+  color: darkorange;
+  text-underline-position: below;
+  font-weight: 700;
+}
+
+#ziggyBackground{
+  background: darkorange;
+}
+
+/*---------------------*/
+
+/**ziggy text align*/
+
+.ziggy-text1{
+  padding-top: 8%;
+  text-align:center;
+  color: white;
+}
+.ziggy-text2{
+  padding-top: 8%;
+  text-align:center;
+  color: white;
+}
+.ziggy-image{
+    /*text-align:center;*/
+    height:auto;
+    width:125%;
+    align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+    .ziggy-image{
+    /*text-align:center;*/
+    height:auto;
+    width:50%;
+    align-items: center;
+    }
+}
+
+/*.form-control{
+  height: 50px;
+}*/
+.test{
+  height: 50px;
+}
+
+@media screen and (max-width: 480px) {
+   .test{
+      height: 30px;
+      /*width: 200px;*/
+    }
+}
+
+
+
+
+/*search input start*/
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 0px;
+    background-color: #fff;
+    width: 80%;
+  
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+/*search input end*/
+
+
+/*-----------------------------------------------------------------------------------------*/
+
+#greyBackGroundColor{
+  background: #f5f5f0;
+}
+
+#cardBackground{
+  background: white;
+}
+
+#cardBorder{
+   border: 2px solid white;
+   border-right-color:#e6e6e6;
+   border-top-color:#e6e6e6;
+   
+}
+
+.heart-image{
+  
+      
+      max-width: 80%;
+      height: auto;
+      margin-top: 50%;
+
+}
+
+.hospitalization{
+    max-width: 100%;
+      height: auto;
+      margin-top: 80%;
+}
+
+
+
+.suitecase-css{
+ /*width: 80px;
+ margin-top: 20px;
+ height: 70px;
+ position: absolute;
+ right : -9px;*/
+
+      max-width: 100%;
+      height: auto;
+      margin-top: 50%;
+
+}
+
+
+
+
+
+.carAccident{
+  /*width: 80px;
+  position: absolute;
+  left: -3px;
+  top: 9px;*/
+
+    max-width: 100%;
+      height: auto;
+      margin-top: 100%;
+ 
+}
+
+
+@media screen and (max-width: 480px) {
+    .carAccident{
+      max-width: 100%;
+      height: auto;
+      margin-top: 0%;
+    }
+
+    .heart-image{
+      max-width: 100%;
+      height: auto;
+      margin-top: 0%;
+    }
+
+    .suitecase-css{
+      max-width: 100%;
+      height: auto;
+      margin-top: 0%;
+    }
+
+    .hospitalization{
+      max-width: 80%;
+      height: auto;
+      margin-top: 0%;
+    }
+
+
+}
+
+
+#wealthChartStyle{
+  margin-top: 5px;
+  margin-left: 15px;
+  font-weight: 700;
+}
+
+#wealthChartData{
+  padding-right: 1px;
+  font-size: 13px;
+}
+
+.button1 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button5 {
+    background-color: white;
+    color: white;
+    border: 2px solid darkorange;
+     background-color: darkorange;
+}
+
+.button5:hover {
+    background-color: white;
+    color: darkorange;
+}
+
+.button2 {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 2px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button4 {
+    background-color: white;
+    color: darkorange;
+    border: 2px solid darkorange;
+     /*background-color: darkorange;*/
+}
+
+.button4:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+
+#cardHeadings{
+  font-weight: 600;
+}
+
+#lifeBg{
+
+  background-size:cover;
+  width: 100%;
+  height: 45px;
+  align-self: auto;
+  margin-top: 25px;
+}
+
+/*footer css start*/
+
+  .text-color{
+    color: white;
+    font-size: 11px;
+  }
+.face-bk {
+    position: absolute;
+    height: 18px;
+    width:  18px;
+    border-radius: 2px;
+}
+
+.you-tube{
+    position: absolute;
+    height: 16px;
+    width: 23px;
+}
+/*footer css end*/
+
+.w3-card-4{
+  border-radius: 2px;
+}
